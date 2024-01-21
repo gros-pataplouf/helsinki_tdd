@@ -91,7 +91,7 @@ function createApp(database) {
         date &&
         convertedDate.year === holidayTemporal.year &&
         convertedDate.month === holidayTemporal.month &&
-        date.getDate() === holiday.getDate()
+        convertedDate.day === holidayTemporal.day
       ) {
         return true;
       }
