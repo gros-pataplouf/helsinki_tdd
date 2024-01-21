@@ -30,7 +30,6 @@ function createApp(database) {
     }
   }
 
-  function convert(date) {return date && Temporal.PlainDate.from(`${date.toISOString().replace("Z", "")}`);}
 
   function calculateCost(age, type, date2, baseCost) {
     if (type === "night") {
