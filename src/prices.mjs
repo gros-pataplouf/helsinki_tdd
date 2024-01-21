@@ -80,7 +80,6 @@ function createApp(database) {
   }
 
   function isMonday(date, date2) {
-    const convertedDate = convert(date);
     return date2.dayOfWeek === 1;
   }
 
