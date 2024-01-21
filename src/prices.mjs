@@ -79,7 +79,7 @@ function createApp(database) {
   }
 
   function isMonday(date) {
-    const convertedDate = Temporal.PlainDate.from(`${date.toISOString().replace("Z", "")}`);
+    const convertedDate = convert(date);
     return convertedDate.dayOfWeek === 1;
   }
 
