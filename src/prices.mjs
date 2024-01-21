@@ -30,6 +30,8 @@ function createApp(database) {
     }
   }
 
+  function convert(dateString) {return Temporal.PlainDate.from(`${date.toISOString().replace("Z", "")}`);}
+
   function calculateCost(age, type, date, baseCost) {
     if (type === "night") {
       return calculateCostForNightTicket(age, baseCost);
