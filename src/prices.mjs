@@ -89,8 +89,8 @@ function createApp(database) {
       let convertedDate = Temporal.PlainDate.from(`${date.toISOString().replace("Z", "")}`);
       if (
         date &&
-        convertedDate.year === holiday.getFullYear() &&
-        date.getMonth() === holiday.getMonth() &&
+        convertedDate.year === holidayTemporal.year &&
+        convertedDate.month === holidayTemporal.month &&
         date.getDate() === holiday.getDate()
       ) {
         return true;
